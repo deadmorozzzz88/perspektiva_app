@@ -1,15 +1,25 @@
 import React from "react";
 import "./App.css";
-import ProductCounter from "./ProductCounter";
+import NameOfConstruction from "./NameOfConstruction";
 
 const App = () => {
   return (
     <div className="App">
-      <ProductCounter product={{ productName: "Orange", count: 6 }} />
-      <ProductCounter product={{ productName: "Apple", count: 1 }} />
-      <ProductCounter product={{ productName: "Carrot", count: 9 }} />
-      <ProductCounter product={{ productName: "Pineapple", count: 4 }} />
-      <ProductCounter product={{ productName: "Tomato", count: 7 }} />
+      <NameOfConstruction
+        productName="Billboard"
+        productDescription="Рекламная конструкция рассчитанная, в основном, на автомобильный траффик"
+        picture="/billboard.jpg"
+      />
+      <NameOfConstruction
+        productName="Supersite"
+        productDescription="Рекламная конструкция большого размера, несущая в себе имиджевую составляющую"
+        picture="/supersite.jpg"
+      />
+      <NameOfConstruction
+        productName="City-Format"
+        productDescription="Рекламная конструкция малого формата , рассчитаная на пешходный траффик"
+        picture="/city_format.jpg"
+      />
     </div>
   );
 };
